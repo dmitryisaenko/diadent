@@ -28,60 +28,47 @@ html {
 body{
 	font-size: 1rem;
 	min-width: 320px;
+	width: 100%;
 	position: relative;
 	line-height: 1.65;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Circe', sans-serif;
+	font-weight: 400;
 	overflow-x: hidden;
-	color: $text;
+	color: $text-color;
 	text-align: left;
 	background-color: #fff;
-	font-weight: normal;
 	margin: 0;
 }
 
+p{
+	margin: 0;
+	padding: 0;
+}
 
-// Custom Sass / Remove before use
-
-.container{
-	max-width: 1200px;
-	min-width: 320px;
-	width: 100%;
-	padding-left: $gutter/2;
-	padding-right: $gutter/2;
-	margin-left: auto;
-	margin-right: auto;
-}	
+a{
+	color: $color-red;
+	text-decoration: underline;
 	
-.container-fluid{
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.img-responsive{
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-
-.example-grid{
-	display: grid;
-	grid-gap: $gutter;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas: "left right";
-	> div:first-child{
-		grid-area: left;
-	}
-	> div:last-child{
-		grid-area: right;
+	&:hover, &:active{
+		color: $color-yellow;
 	}
 }
 
-.parent{ // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
-	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7);
+.white-link{
+	color: $color-white;
 }
+
+.link-phone{
+	color: $text-color;
+	text-decoration: none;
+
+	&:hover, &:active, &:visited{
+		color: $text-color;
+		text-decoration: none;
+	}
+}
+
+
 
 	
   

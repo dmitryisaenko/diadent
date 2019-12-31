@@ -1,6 +1,17 @@
 // User variables:
-$accent: orange;
-$text: #333;
+$color-black: #000000;
+$color-gray1: #282828;
+$color-gray2: #414141;
+$color-red: #8a1e04;
+$color-gray3: #cecece;
+$color-gray4: #f3e8e5;
+$color-yellow: #f7941d;
+$color-orange: #ff671f;
+$color-white2: #fff1e1;
+$color-white: #ffffff;
+
+$accent: $color-orange;
+$text-color: $color-gray1;
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px;
