@@ -1,0 +1,27 @@
+.modal-title{
+    color: $color-orange;
+}
+
+.call-popup-phones__item{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 13px;
+    &-img{
+        width: 30%;
+        height: 33px;
+        text-align: right;
+    }
+    img{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.popup-link-phone{
+    margin-left: 13px;
+    font-size: 27px;
+}
+
+.call-popup-descr{
+    font-size: 15px;
+}

@@ -69,13 +69,74 @@
 /* ----------------- ЗНАЧЕНИЕ И МЕНЬШЕ -----------------*/
 /*1200 и меньше */
 @media only screen and (max-width : 1200px) {
+    .wrap{
+        padding: 0px 35px;
+        width: 100%;
+    }
     
+    .contact-item, .contact-item_display-none{
+        display: none;
+    }
     
+    .contact-item-md{
+        display: block;
+    }
+
+    .header-lang{
+        padding-top: 11px;
+        margin-left: 37px;
+    
+        &__item{
+            font-size: 21px;
+            line-height: 35px;
+            font-weight: 700;
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: $color-gray3;
+        }
+        
+        &__item-active{
+            color: $color-red;
+        }
+    }
 }
 
 /*991 и меньше */
 @media only screen and (max-width : 991px) {
+    .subheader{
+        height: 82px;
+    }
+    .main-logo__img{
+        height: 62px;
+    }
+    .contact-item-md{
+        line-height: 37px;
+        &__adress{
+            font-size: 23px;
+        }
+        &__phone{
+            font-size: 29px;
+            .fa{
+                margin-left: 7px;
+            }
+        }
+    }
+    .contact-item-md-addon{
+        top: 80px;
+        right: 115px;
+    }
+    .header-lang{
+        padding-top: 11px;
+        margin-left: 37px;
     
+        &__item{
+            font-size: 17px;
+            line-height: 27px;
+        }
+    }
+    .content {
+        padding-top: 150px;
+    }
     
 }
  
@@ -88,13 +149,104 @@
 
 /*768 и меньше */
 @media only screen and (max-width : 768px) {
-
+    .contact-item-md{
+        line-height: 37px;
+        &__adress{
+            font-size: 21px;
+        }
+        &__phone{
+            font-size: 27px;
+            .fa{
+                margin-left: 7px;
+            }
+        }
+    }
+    .contact-item-md-addon{
+        top: 80px;
+        right: 110px;
+    }
+    .header-lang{
+        padding-top: 11px;
+        margin-left: 37px;
+    
+        &__item{
+            font-size: 16px;
+            line-height: 27px;
+        }
+    }
 
 }
 
-/*621 и меньше */
-@media only screen and (max-width : 621px) {
+/*660 и меньше */
+@media only screen and (max-width : 660px) {
+    .header-main{
+        position: initial;
+        margin-top: 45px;
+    }
+    .subheader{
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 23px;
+    }
+    .main-logo{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .main-logo__img{
+        width: 100%;
+        height: auto;
+    }
+    .contacts{
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+    .contact-item{
+        display: flex;
+        margin-right: 0px;
+    }
+    .contact-item__logo, .contact-item__title, .contact-item__location, .contact-item_workinghours{
+        display: none;
+    }
+    .contact-item__content a.link-phone{
+        font-size: 27px;
+        font-weight: 700;
+        color: #8a1e04;
+        text-align: right;
+    }
+    .contact-item__content-adress{
+        font-size: 22px;
+        font-weight: 400;
+        color: #8a1e04;
+        text-align: right;
+    }
     
+    .contact-item-md, .header-lang, .contact-item-md-addon{
+        display: none;
+    }
+    .contact-item-sm{
+        display: block;
+    }
+    .subheader-btn{
+        display: flex;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+        margin-top: 23px;
+    }
+    .subheader-btn__text{
+    }
+    .header-lang{
+        display: flex;
+        flex-direction: row;
+        &__item{
+            margin-left: 9px;
+        }
+    }
+    .content {
+        padding-top: 0px;
+    }
     
 }
 
@@ -106,12 +258,43 @@
 
 /*420 и меньше */
 @media only screen and (max-width : 420px) {
-    
+    .contacts{
+        margin-top: 13px;
+    }
+    .contact-item__content a.link-phone{
+        font-size: 24px;
+    }
+    .contact-item__content-adress{
+        font-size: 18px;
+    }
+    .call-popup-phones__item{
+        &-img{
+            // width: 20%;
+            display: none;
+            height: 23px;
+        }
+        &-number{
+            width: 100%;
+            margin-left: 0px;
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    .call-popup-descr{
+        width: 100%;
+        font-size: 13px;
+    }
+
     
 }
 
 /*320 и меньше */
 @media only screen and (max-width : 320px) {
-    
+    .nav-wrap {
+        margin-top: -990px;
+    }
+    .menu-show {
+        margin-top: 0;
+    }
     
 }

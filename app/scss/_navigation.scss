@@ -4,15 +4,18 @@
 .toggle-button {
   position: fixed;
   width: 44px;
-  height: 40px;
-  top: 20px;
-  right: 20px;
+  height: 51px;
+  top: 0px;
+  right: 0px;
+  width: 100%;
   padding: 4px;
   transition: .25s;
   z-index: 15;
   display: none;
   border: 1px solid #fce38a;
   border-radius: 4px;
+  background-color: $color-red;
+  opacity: 0.95;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
 
 .toggle-button:hover {
@@ -22,32 +25,30 @@
 .toggle-button .menu-bar {
   position: absolute;
   border-radius: 2px;
-  width: 80%;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
+  width: 43px;
+  margin-top: 5px;
+  left: calc(50% - 16px);
   transition: .5s; }
 
 .toggle-button .menu-bar-top {
-  border: 4px solid #fce38a;
+  border: 4px solid $color-white;
   border-bottom: none;
   top: 6px; }
 
 .toggle-button .menu-bar-middle {
   height: 4px;
-  background-color: #fce38a;
-  margin-top: 7px;
+  background-color: $color-white;
+  margin-top: 12px;
   margin-bottom: 7px;
   top: 10px; }
 
 .toggle-button .menu-bar-bottom {
-  border: 4px solid #fce38a;
+  border: 4px solid $color-white;
   border-top: none;
   top: 28px; }
 
 .button-open {
-  right: 20px;
-  border: 1px solid #fff;
-  background-color: #fce38a;
+  background-color: $color-red;
 }
 
 .button-open .menu-bar-top {
@@ -64,9 +65,6 @@
   transform: rotate(-45deg) translate(7px, -7px);
   transition: .5s; }
 
-.menu-show {
-  margin-left: 0;
-  left: 0 !important; }
 
 
 
@@ -82,16 +80,14 @@
 
 .nav-wrap ul {
   max-width: 1200px;
+  padding: 0px 15px;
   width: 100%;
-
   display: flex;
   align-self: center;
   justify-content: space-between;
   list-style: none;
   margin: 0px auto;
-  
   line-height: 59px;
-  padding: 0;
 }
 
 .nav-wrap ul li {
@@ -102,9 +98,20 @@
   text-align: center;
 }
 
-.nav-wrap ul.sub-menu li {
-  // height: 60px;
+.nav-wrap>ul>li::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 18px;
+  height: 24px;
+  opacity: 0.2;
+  border-right: 1px solid $color-white;
 }
+
+.nav-wrap>ul>li:hover::after {
+  // border-right: none;
+}
+
 
 .nav-wrap ul li a {
   font-size: 16px;
@@ -113,7 +120,7 @@
   text-decoration: none;
   position: relative;
   display: block;
-  transition: 0.1s; 
+  transition: 0.1s;
 }
 
 .nav-wrap>ul>li.menu-item-has-children>a::after {
@@ -129,7 +136,8 @@
   text-decoration: none;
   font-weight: 700;
 }
-.nav-wrap:not(.mobile)>ul>li>a:hover, .nav-wrap ul li a:active, .nav-wrap>ul>li.current-menu-item>a {
+
+.nav-wrap>ul>li a:hover, .nav-wrap>ul>li a:active, .nav-wrap>ul>li.current-menu-item>a {
   color: $color-red;
   font-weight: 700;
   background-color: $color-yellow;
@@ -151,6 +159,7 @@
 }
 
 .nav-wrap ul.sub-menu {
+  position: relative;
   z-index: 1000;
   display: none;
   height: max-content;
@@ -178,8 +187,8 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
 }
 
 .nav-wrap ul.sub-menu a {
-  padding-left: 21px;
-  font-size: 16px;
+  padding-left: 10px;
+  font-size: 15px;
   line-height: 41px;
   font-weight: 300;
   color: $color-gray2;
@@ -216,9 +225,66 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
   right: 25px;
   width: 44px;
   height: 44px;
-  z-index: 10;
+  z-index: 1;
 }
 
+/*1200 и меньше */
+@media only screen and (max-width: 1200px) {
+  // .nav-wrap>ul{
+  //   position: relative;
+  // }
+  
+  .nav-wrap ul.sub-menu{
+    padding-bottom: 5px;
+  }
+  .nav-wrap ul.sub-menu li{
+    margin-bottom: 15px;
+  }
+
+  .nav-wrap ul.sub-menu a {
+    line-height: 21px;
+    padding-right: 10px;
+  }
+}
+
+/*991 и меньше */
+@media only screen and (max-width : 991px) {
+  .nav-wrap {
+    height: 49px;
+  }
+  .nav-wrap ul{
+    line-height: 49px;
+  }
+  .nav-wrap>ul>li::after{
+    top: 12px;
+  }
+  .nav-wrap ul li a{
+    font-size: 15px;
+  }
+  .nav-wrap ul.sub-menu a{
+    font-size: 14px;
+  }
+  
+}
+
+/*768 и меньше */
+@media only screen and (max-width : 768px) {
+  .nav-wrap {
+    height: 44px;
+  }
+  .nav-wrap ul{
+    line-height: 44px;
+  }
+  .nav-wrap ul.sub-menu li {
+    margin-bottom: 12px;
+  }
+  .nav-wrap ul li a{
+    font-size: 14px;
+  }
+  .nav-wrap ul.sub-menu a{
+    font-size: 13px;
+  }
+}
 
 /*660 и меньше */
 @media only screen and (max-width: 660px) {
@@ -226,21 +292,29 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
     display: block;
   }
 
+  .subheader{
+    overflow: hidden;
+  }
   .nav-wrap {
-    background-color: #6968AB;
     position: fixed;
-    top: 0;
-    height: 100%;
-    width: 280px;
-    margin-left: -280px;
+    top: 50px;
+    left: 1%;
+    height: 91%;
+    width: 98%;
+    margin-top: -800px;
     /* margin-left: 0px; */
     font-size: 1em;
     font-weight: 700;
     overflow: auto;
     transition: .25s;
     z-index: 10;
-    opacity: .9;
+    opacity: 1;
+    border-radius: 0px 0px 10px 10px;
+    background-color: $color-yellow;
     box-shadow: 4px 2px 15px 1px #B9ADAD;
+    &::-webkit-scrollbar {
+      display: none;
+  }
   }
 
   .nav-wrap>ul{
@@ -248,24 +322,53 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
     flex-direction: column;
     width: 100%;
     padding-left: 33px;
-    margin-top: 30px;
+    margin-top: 0px;
+    padding-top: 13px;
+    z-index: 11;
+    overflow-y: auto;
+    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box;
   }
     
   .nav-wrap ul.sub-menu{
     top: 0;
+    padding: 0;
     background-color: transparent;
     border: none;
     box-shadow: none;
+    
+  }
+
+  .nav-wrap ul.sub-menu li{
+    line-height: 35px;
+    
+  }
+
+  .nav-wrap ul.sub-menu a{
+    font-size: 17px;
+    font-weight: 400;
+    color: $color-white;
   }
 
   .nav-wrap ul li{
     width: 100%;
+    max-width: 100%;
     text-align: left;
   }
-
+  .nav-wrap>ul>li::after{
+    border: none;
+  }
+  .nav-wrap>ul>li>a{
+    font-size: 21px;
+    text-transform: uppercase;
+  }
   .nav-wrap li.menu-item-has-children {
     position: relative;
     height: 100%;
+  }
+  
+  .nav-wrap>ul>li.menu-item-has-children>a:hover::after, .nav-wrap>ul>li.menu-item-has-children>a::after {
+    display: none;
   }
 
   .sidebar-menu-arrow::after{
@@ -274,11 +377,13 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
     padding: 10px;
     color: #fff;
     position: relative;
+    font-size: 23px;
+    color: $color-white;
   }
 
   .sidebar-menu-arrow:hover::after {
     cursor: pointer;
-    color: #FFFA3B;
+    color: $color-red;
   }
 
   .sidebar-menu-arrow:active::after {
@@ -294,7 +399,7 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
   }
 
   .menu-show {
-    margin-left: 0;
+    margin-top: 0;
   }
 
   .menu-sidebar {

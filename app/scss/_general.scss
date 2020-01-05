@@ -58,6 +58,13 @@ a{
 	color: $color-white;
 }
 
+.logo-link{
+	text-decoration: underline;
+	&:hover, &:active, &:visited{
+		text-decoration: none;
+	}
+}
+
 .link-phone{
 	color: $text-color;
 	text-decoration: none;
@@ -66,6 +73,49 @@ a{
 		color: $text-color;
 		text-decoration: none;
 	}
+}
+
+.popup-link-phone{
+	color: $color-red;
+	text-decoration: none;
+
+	&:hover, &:active, &:visited{
+		color: $color-red;
+		text-decoration: none;
+	}
+}
+
+.wrap_w1200{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.wrap{
+	padding: 0px 15px;
+	width: 100%;
+}
+
+.btn{
+	box-shadow: 0px 5px 14px 10px rgba(247,147,29,0.18);
+	width: 325px;
+	height: 55px;
+	border-radius: 4px;
+}
+
+.bg-btn{
+	background-color: $color-yellow;
+}
+
+.subheader-btn__text{
+	font-size: 23px;
+	line-height: 22px;
+	font-weight: 700;
+	color: $color-red;
+	margin: 0 auto;
+}
+
+.subheader-btn{
+	display: none;
 }
 
 
