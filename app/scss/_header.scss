@@ -18,6 +18,42 @@
     }
 }
 
+
+
+.subheader-btn{
+    display: none;
+    height: 45px;
+    margin-left: 33px;
+    
+    &_show{
+        display: block;
+    }
+}
+
+.btn-wrap_header{
+	display: none;
+	width: 100%;
+    height: 95px;
+    padding-top: 25px;
+    background-color: $color-red;
+    justify-content: center;
+}
+
+.subheader-btn-sm{
+    width: 240px;
+    height: 45px;
+}
+
+.subheader-btn__text{
+	font-size: 23px;
+	line-height: 31px;
+	font-weight: 700;
+    color: $color-red;
+    &:hover{
+        color: $color-white;
+    }
+}
+
 .main-logo__img{
     height: 92px;
     transition: height 0.5s;
@@ -127,6 +163,7 @@
 
     &_show{
         display: flex;
+        align-items: center;
     }
 }
 
@@ -152,5 +189,6 @@
 }
 
 .content{
+    width: 100%;
     padding-top: 190px;
 }

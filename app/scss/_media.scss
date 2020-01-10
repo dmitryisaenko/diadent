@@ -244,6 +244,12 @@
             margin-left: 9px;
         }
     }
+    .btn-wrap_header{
+        display: flex;
+    }
+    .modal-dialog {
+        margin: 1.75rem auto;
+    }
     .content {
         padding-top: 0px;
     }
@@ -283,6 +289,43 @@
     .call-popup-descr{
         width: 100%;
         font-size: 13px;
+    }
+    .modal-title{
+        font-size: 17px;
+        margin: 20px auto 20px;
+    }
+    .modal-dialog{
+        width: 90%;
+        min-width: 240px;
+    }
+    .popup-input-group_inputfield, .btn-submit{
+        width: 90%;
+    }
+    .popup-input-group_inputfield{
+        font-size: 20px;
+    }
+    .modal-content .close{
+        right: 11px;
+        top: 11px;
+        width: 11px;
+        height: 11px;
+        & span{
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+    }
+    
+    .btn-wrap_header{
+        height: 75px;
+        padding-top: 20px;
+    }    
+    .subheader-btn-sm{
+        width: 210px;
+        height: 35px;
+    }    
+    .subheader-btn__text{
+        font-size: 19px;
+        line-height: 21px;
     }
 
     

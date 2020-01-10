@@ -299,7 +299,8 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
     position: fixed;
     top: 50px;
     left: 1%;
-    height: 91%;
+    max-height: 91%;
+    height: fit-content;
     width: 98%;
     margin-top: -800px;
     /* margin-left: 0px; */

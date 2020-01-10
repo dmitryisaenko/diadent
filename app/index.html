@@ -32,6 +32,7 @@
 					</a>
 				</div>
 				<div class="contacts">
+					
 					<div class="contact-item">
 						<div class="contact-item__logo">
 							<img src="/img/placeholder_map.png" alt="Our adress">
@@ -44,6 +45,7 @@
 							</p>
 						</div>
 					</div>
+					
 					<div class="contact-item">
 						<div class="contact-item__logo">
 							<img class="contact-item__img-phone" src="/img/placeholder_call.png" alt="Our phone numbers">
@@ -61,6 +63,7 @@
 							</p>
 						</div>
 					</div>
+					
 					<div class="contact-item contact-item_workinghours">
 						<div class="contact-item__logo">
 							<img src="/img/placeholder_clock.png" alt="Our working time">
@@ -71,7 +74,6 @@
 							<p class="contact-item__content">Сб: 12.00-18.00</p>
 						</div>
 					</div>
-					
 					
 					<div class="contact-item-md">
 						<p class="contact-item-md__adress">Винница, ул. Фрунзе 17</p>
@@ -86,9 +88,7 @@
 						<a href="#" class="header-lang__item header-lang__item-active" title="Перейти на українську">uk</a>
 						<a href="#" class="header-lang__item" title="Выбрать русский язык">ru</a>
 					</div>
-					<div class="btn bg-btn subheader-btn">
-						<p class="subheader-btn__text">Заказать звонок</p>
-					</div>
+
 					<div class="contact-item-md-addon">
 						<p class="contact-item-md__phone">
 							<a class="link-phone" href="">+ 38 (067) 123-45-67</a class="link-phone">
@@ -98,26 +98,34 @@
 						</p>
 					</div>
 				</div>
+				
 				<div class="contact-item-scroll">
 					<p class="contact-item-md__phone">
 						<a class="link-phone" href="">+ 38 (067) 123-45-67</a class="link-phone">
 						<!-- <i class="fa fa-caret-down" id="caret-down"></i> -->
 						<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 					</p>
-					<div class="btn bg-btn subheader-btn">
+					<div class="btn bg-btn subheader-btn modalCallRequest request-call">
 						<p class="subheader-btn__text">Заказать звонок</p>
 					</div>
-					<div class="contact-item-md-addon contact-item-md-addon_scroll">
+					<!-- <div class="contact-item-md-addon contact-item-md-addon_scroll">
 						<p class="contact-item-md__phone">
 							<a class="link-phone" href="">+ 38 (067) 123-45-67</a class="link-phone">
 						</p>
 						<p class="contact-item-md__phone">
 							<a class="link-phone" href="">+ 38 (067) 123-45-67</a class="link-phone">
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
+
+		<div class="btn-wrap_header">
+			<div class="btn bg-btn subheader-btn-sm  request-call">
+				<p class="subheader-btn__text">Заказать звонок</p>
+			</div>
+		</div>
+		
 
 		<!-- Навигация на моб. устройствах, меньше 991px -->
 		<span class="toggle-button">
@@ -125,6 +133,7 @@
 			<div class="menu-bar menu-bar-middle"></div>
 			<div class="menu-bar menu-bar-bottom"></div>
 		</span>
+
 		<!-- Главная Навигация по сайту -->
 		<nav class="nav-wrap">
 			<ul id="menu" class="menu">
@@ -172,6 +181,7 @@
 	
 	</header>
 	<div class="content">
+		<div class="wrap wrap_w1200">
 		<!-- Custom HTML / Remove before use -->
 <a class="white-link" href="#">text link</a> text
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, provident praesentium! Enim nam provident illo ipsam ad expedita maxime fugiat dolores doloribus sapiente. Incidunt quo dicta laborum cumque? Reiciendis, vero?
@@ -215,52 +225,109 @@ Harum, saepe, explicabo repudiandae aliquid aspernatur non ratione laudantium pe
 Possimus a ab cupiditate amet excepturi. Dolor officia dolores dolorem facilis totam, dignissimos nemo provident minus quibusdam in corporis. Molestias debitis recusandae vero aperiam impedit voluptates voluptatum eum provident repellat.
 Illum consequuntur, vero voluptate nemo quod ipsam iure delectus, voluptatibus hic dolore maxime tenetur ratione culpa architecto doloribus. Veniam illo dolorem exercitationem, soluta autem in nobis earum tempora. Esse, provident?
 	</div>
+	</div>
 
 	<!-- Modal Список телефонов (modalCall) -->
 <div class="modal fade" id="modalCall" tabindex="-1" role="dialog" aria-labelledby="modalCall">
 	<div class="modal-dialog" role="document">
 	  <div class="modal-content">
-		<div class="modal-header">
-			<h5 class="modal-title text-center">Контактные телефоны</h5>
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			  <span aria-hidden="true">&times;</span>
+					<span aria-hidden="true">&times;</span>
 			</button>
-		</div>
-		<div class="modal-body text-center">
-			<div class="call-popup-phones">
-				<div class="call-popup-phones__item">
-					<div class="call-popup-phones__item-img">
-						<a class="popup-link-phone" href="tel:+380677306061">
-							<img src="/img/kievstar.jpg" alt="Kievstar mobile number" >
-						</a>
+			<div class="modal-body text-center">
+				<h5 class="modal-title">Контактные телефоны</h5>
+				<div class="call-popup-phones">
+					<div class="btn bg-btn call-popup-phones__item">
+						<p class="call-popup-phones__item-number">
+							<a class="popup-link-phone" href="tel:+380677306061">+38-067-730-60-61</a>
+						</p>
 					</div>
-					<p class="call-popup-phones__item-number">
-						<a class="popup-link-phone" href="tel:+380677306061">+38-067-730-60-61</a>
-					</p>
-				</div>
-				<div class="call-popup-phones__item">
-					<div class="call-popup-phones__item-img">
-						<a class="popup-link-phone" href="tel:+380632941867">
-							<img src="/img/lifecell.jpg" alt="Lifecell mobile number" >
-						</a>
+					<div class="btn bg-btn call-popup-phones__item">
+						<p class="call-popup-phones__item-number">
+							<a class="popup-link-phone" href="tel:+380632941867">+38-063-294-18-67</a>
+						</p>
 					</div>
-					<p class="call-popup-phones__item-number">
-						<a class="popup-link-phone" href="tel:+380632941867">+38-063-294-18-67</a>
-					</p>
-				</div>
-				<div class="call-popup-phones__item">
-					<div class="call-popup-phones__item-img">
-						<a class="popup-link-phone call-popup-phones__item-number-link" href="tel:+380432603260">
-							<img src="/img/city-phone.png" alt="City phone number">
-						</a>
+					<div class="btn bg-btn call-popup-phones__item">
+						<p class="call-popup-phones__item-number">
+							<a class="popup-link-phone call-popup-phones__item-number-link" href="tel:+380432603260">+38-0432-60-32-60</a>
+						</p>
 					</div>
-					<p class="call-popup-phones__item-number">
-						<a class="popup-link-phone call-popup-phones__item-number-link" href="tel:+380432603260">+38-0432-60-32-60</a>
-					</p>
 				</div>
+				<p class="call-popup-descr">*Коснитесь номера, чтобы его набрать. Или <a class="white-link" href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalCallRequest"><strong><u>кликните здесь</u></strong></a>, чтобы заказать обратный звонок!</p>
 			</div>
-		  	<p class="call-popup-descr">*Коснитесь номера, чтобы его набрать. Или <a href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalCallBack"><strong><u>кликните здесь</u></strong></a>, чтобы заказать обратный звонок!</p>
-		</div>
+	   
+	  </div>
+	</div>
+  </div>
+
+<!-- Modal Заказать звонок (modalCallRequest) -->
+<div class="modal fade" id="modalCallRequest" tabindex="-1" role="dialog" aria-labelledby="modalCallRequest">
+	<div class="modal-dialog modal-dialog_requestform" role="document">
+	  <div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="modal-body text-center">
+				<h5 class="modal-title">Заказать звонок</h5>
+				<form id="modalCallRequest" action="">
+					<div class="popup-input-group">
+						<div class="popup-input-group-wrap">
+							<input required name="name" class="popup-input-group_inputfield" type="text" placeholder="Ваше имя" onfocus="this.placeholder = ''"
+							onblur="this.placeholder = 'Ваше имя'">
+							<input required name="phone" class="popup-input-group_inputfield" type="text" placeholder="Номер телефона" onfocus="this.placeholder = ''"
+							onblur="this.placeholder = 'Номер телефона'">
+						</div>
+						<input type="submit" class="btn bg-btn btn-submit" value="Заказать звонок">
+					</div>
+					
+				</form>
+			</div>
+	   
+	  </div>
+	</div>
+  </div>
+
+  <!-- Modal Задать вопрос (modalQuestion) -->
+<div class="modal fade" id="modalQuestion" tabindex="-1" role="dialog" aria-labelledby="modalQuestion">
+	<div class="modal-dialog modal-dialog_requestform" role="document">
+	  <div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="modal-body text-center">
+				<h5 class="modal-title">Задать вопрос</h5>
+				<form id="modalQuestion" action="">
+					<div class="popup-input-group">
+						<div class="popup-input-group-wrap">
+							<div class="input-wrap">
+								<input required name="name" class="popup-input-group_inputfield" type="text" placeholder="Ваше имя" onfocus="this.placeholder = ''"
+							onblur="this.placeholder = 'Ваше имя'">
+								<div class="input-wrap_icon">
+									<img class="input-wrap__img" src="/img/user_icon.png" alt="User Icon">
+								</div>
+							</div>
+							<div class="input-wrap">
+								<input required name="phone" class="popup-input-group_inputfield" type="text" placeholder="Номер телефона" onfocus="this.placeholder = ''"
+							onblur="this.placeholder = 'Номер телефона'">
+								<div class="input-wrap_icon">
+									<img class="input-wrap__img" src="/img/phone_icon.png" alt="User Icon">
+								</div>
+							</div>
+							<div class="input-wrap">
+								<input required name="email" class="popup-input-group_inputfield" type="text" placeholder="E-mail" onfocus="this.placeholder = ''"
+							onblur="this.placeholder = 'E-mail'">
+								<div class="input-wrap_icon">
+									<img class="input-wrap__img" src="/img/email_icon.png" alt="User Icon">
+								</div>
+							</div>
+							<textarea required name="msg" class="popup-input-group_textarea" rows="2" placeholder="Сообщение" onfocus="this.placeholder = ''"
+							onblur="this.placeholder = 'Сообщение'"></textarea>
+						</div>
+						<input type="submit" class="btn bg-btn btn-submit" value="Отправить вопрос">
+					</div>
+					
+				</form>
+			</div>
 	   
 	  </div>
 	</div>

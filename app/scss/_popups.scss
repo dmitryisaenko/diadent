@@ -1,27 +1,106 @@
+.modal-content {
+    width: 100%;
+    background-color: $color-red;
+	position: relative;
+    padding-bottom: 30px;
+	& .close{
+		position: absolute;
+		width: 21px;
+		height: 21px;
+		right: 20px;
+		top: 20px;
+		color: $color-orange;
+		margin-top: 0px;
+        margin-right: 20px;
+        z-index: 1;
+		span{
+			font-family: serif;
+			font-size: 36px;
+			padding: 0px 10px;
+			font-weight: 300;
+			border: 1px solid $color-orange;
+            border-radius: 50%;
+            z-index: 1;
+		}
+	}
+}
+
 .modal-title{
-    color: $color-orange;
+    color: $color-white;
+    margin: 30px auto 20px;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 700;
 }
 
 .call-popup-phones__item{
-    display: flex;
-    justify-content: start;
-    margin-bottom: 13px;
-    &-img{
-        width: 30%;
-        height: 33px;
-        text-align: right;
-    }
-    img{
-        width: auto;
-        height: 100%;
-    }
+    margin-bottom: 23px;
+    max-width: 340px;
+    width: 100%;
+    min-width: 260px;
 }
 
 .popup-link-phone{
     margin-left: 13px;
     font-size: 27px;
+    font-weight: 700;
 }
 
 .call-popup-descr{
     font-size: 15px;
+    color: $color-white;
+}
+
+.modal-dialog_requestform{
+    max-width: 380px;
+}
+
+.input-input-group{
+    max-width: 340px;
+    width: 100%;
+    min-width: 260px;
+}
+
+.popup-input-group_inputfield, .popup-input-group_textarea{
+    width: 282px;
+    
+    padding-left: 20px;
+    background-color: #ffffff;
+    color: $color-red;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto 20px;
+}
+
+.popup-input-group_inputfield{
+    height: 45px;
+    font-size: 23px;
+    
+}
+
+.popup-input-group_textarea{
+    height: 90px;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.popup-input-group_inputfield::placeholder,
+.popup-input-group_textarea::placeholder{
+    font-size: 14px;
+    padding-top: 10px;
+    font-weight: 300;
+    color: lighten($color-gray2, 15%) ;
+}
+
+.input-wrap{
+    position: relative;
+    &_icon{
+        position: absolute;
+        top: 8px;
+        right: 45px;
+        font-family: "FontAwesome";
+    }
+    &__img{
+        opacity: 0.4;
+    }
 }

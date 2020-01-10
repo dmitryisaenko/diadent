@@ -7,27 +7,31 @@ document.addEventListener("DOMContentLoaded", function() {
 		$toggleButton.on('click', function() {
             $(this).toggleClass('button-open');
             $navWrap.toggleClass(['menu-show', 'mobile']);
-			$addonPhonesBlock.toggleClass('show-contact-item-md-addon');
+			// $addonPhonesBlock.toggleClass('show-contact-item-md-addon');
+			$('body').toggleClass('overflow_hidden');
 		});
 
 	//Show sub-menu item in mobile version
-	// var $menuItemHasChildren = $('.menu-item-has-children');
-	var $menuItemHasChildren = $('.sidebar-menu-arrow');
-	$menuItemHasChildren.on('click', function() {
+	var $sidebarMenuArrow = $('.sidebar-menu-arrow');
+	$sidebarMenuArrow.on('click', function() {
 		if ($(window).width() <= 660) {
-			$menuItemHasChildren.not(this).next('.sub-menu').hide(300);
+			$sidebarMenuArrow.not(this).next('.sub-menu').hide(300);
 			$(this).next('.sub-menu').toggle(300);
 		}
 	});
-
-	//Show block with addon phones
+	//Show modal window with addon phones
 	var $addonPhonesBtn = $('.fa-chevron-circle-down');
-		// $addonPhonesBlock = $('.contact-item-md-addon');
-
-		$addonPhonesBtn.on('click', function(){
-			$('#modalCall').modal('show');
-			// $addonPhonesBlock.toggleClass('show-contact-item-md-addon');
-		});
+	$addonPhonesBtn.on('click', function(){
+		$('#modalCall').modal('show');
+	});
+	
+	//Show modal window with call request
+	var $requestCallBtn = $('.request-call');
+	$requestCallBtn.on('click', function(){
+		$('#modalCallRequest').modal('show');
+	});
+		
+	$('#modalQuestion').modal('show');
 
 	//Collapse main header to smaller height after scroll
 	$(window).scroll(function() {
@@ -35,14 +39,18 @@ document.addEventListener("DOMContentLoaded", function() {
 			$('.contacts, .header-lang').css('display', 'none');
 			$('.main-logo__img').addClass('main-logo__img_scroll');
 			$('.contact-item-scroll').addClass('contact-item-scroll_show');
-			$('.subheader').addClass('subheader_scroll').animate({'opacity':'1'},500);
+			$('.subheader-btn').addClass('subheader-btn_show');
+			$('.subheader').addClass('subheader_scroll');
 		} else {
 			$('.contacts, .header-lang').attr('style', ''); 
 			$('.main-logo__img').removeClass('main-logo__img_scroll'); 
 			$('.contact-item-scroll').removeClass('contact-item-scroll_show');
+			$('.subheader-btn').removeClass('subheader-btn_show');
 			$('.subheader').removeClass('subheader_scroll');
 		}
 	});
+
+	if ($(window).width() <= 991) $('.contact-item-scroll').removeClass('contact-item-scroll_show');
 
 
 	// Плавный переход между разделами сайта при клике на пункты меню

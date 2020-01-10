@@ -78,9 +78,11 @@ a{
 .popup-link-phone{
 	color: $color-red;
 	text-decoration: none;
+	transition: 0.2s;
 
 	&:hover, &:active, &:visited{
-		color: $color-red;
+		color: $color-white;
+		transition: 0.2s;
 		text-decoration: none;
 	}
 }
@@ -97,26 +99,42 @@ a{
 
 .btn{
 	box-shadow: 0px 5px 14px 10px rgba(247,147,29,0.18);
-	width: 325px;
-	height: 55px;
 	border-radius: 4px;
+	&:hover{
+		box-shadow: 0px 5px 14px 10px rgba(255,255,255,0.18);
+	}
+	&:focus{
+		box-shadow: 0px 5px 14px 10px rgba(247,147,29,0.18);
+	}
 }
 
 .bg-btn{
 	background-color: $color-yellow;
 }
 
-.subheader-btn__text{
-	font-size: 23px;
-	line-height: 22px;
+.btn-submit{
+	width: 282px;
+	height: 45px;
+	font-size: 16px;
+	line-height: 31px;
 	font-weight: 700;
 	color: $color-red;
-	margin: 0 auto;
+	&:hover{
+		color: white;
+	}
 }
 
-.subheader-btn{
-	display: none;
+.overflow_hidden{
+	overflow: hidden;
 }
+
+
+
+
+
+
+
+
 
 
 
