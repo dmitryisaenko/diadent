@@ -339,14 +339,25 @@
         width: 100%;
     }
     .btn{
-        padding: 0.6rem .75rem;
+        padding: 0.4rem;
+    }
+
+    .modal-callRequest{
+        margin: 1.75rem 10%;
+    }
+    .call-popup-phones__item {
+        width: 95%;
+        min-width: 180px;
     }
     
 }
 
 /*576 и меньше */
 @media only screen and (max-width: 576px) {
-    
+    .popup-link-phone {
+        font-size: 21px;
+        margin-left: 0;
+    }
     
 }
 
@@ -370,9 +381,12 @@
         &-number{
             width: 100%;
             margin-left: 0px;
-            font-size: 25px;
+            font-size: 17px;
             text-align: center;
         }
+    }
+    .popup-link-phone {
+        font-size: 17px;
     }
     .call-popup-descr{
         width: 100%;
@@ -383,14 +397,23 @@
         margin: 20px auto 20px;
     }
     .modal-dialog{
-        width: 90%;
+        width: 80%;
         min-width: 240px;
     }
     .popup-input-group_inputfield, .btn-submit{
         width: 90%;
     }
     .popup-input-group_inputfield{
-        font-size: 20px;
+        font-size: 14px;
+        height: 33px;
+        margin: 0 auto 11px;
+        padding-left: 10px;
+    }
+    .popup-input-group_textarea {
+        width: 90%;
+        margin: 0 auto 11px;
+        padding-left: 10px;
+        font-size: 14px;
     }
     .modal-content .close{
         right: 11px;
@@ -402,7 +425,10 @@
             padding: 5px 10px;
         }
     }
-    
+    .input-wrap_icon {
+        top: 1px;
+        right: 20px;
+    }
     .btn-wrap_header{
         height: 75px;
         padding-top: 20px;
