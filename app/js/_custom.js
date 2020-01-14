@@ -30,9 +30,19 @@ document.addEventListener("DOMContentLoaded", function() {
 	$requestCallBtn.on('click', function(){
 		$('#modalCallRequest').modal('show');
 	});
-		
-	$('#modalQuestion').modal('show');
+	
+	//Show modal window with appointment request
+	var $requestAppBtn = $('.request-appointment');
+	$requestAppBtn.on('click', function(){
+		$('#modalAppointment').modal('show');
+	});
 
+	//Show modal window with question request
+	var $requestQuestBtn = $('.request-question');
+	$requestQuestBtn.on('click', function(){
+		$('#modalQuestion').modal('show');
+	});
+		
 	//Collapse main header to smaller height after scroll
 	$(window).scroll(function() {
 		if ( ( $(window).scrollTop() >= 100 ) && ($(window).width() > 991) ) {
@@ -70,8 +80,8 @@ document.addEventListener("DOMContentLoaded", function() {
 	$(document).ready(function() {
 		$(window).scroll(function () { // При прокрутке попадаем в эту функцию
 		/* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
-		if ($(this).scrollTop() > top_show) $('#back-top').fadeIn();
-		else $('#back-top').fadeOut();
+		if ($(this).scrollTop() > top_show) $('#back-top111').fadeIn();
+		else $('#back-top111').fadeOut();
 		});
 		$('#back-top').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
 		/* Плавная прокрутка наверх */

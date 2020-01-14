@@ -137,6 +137,30 @@
     .content {
         padding-top: 150px;
     }
+
+    .footer-main{
+
+        &__uppart-item_nav{
+            display: none;
+        }
+        &__uppart-item{
+            padding-top: 33px;
+            width: 32%;
+        }
+        &__logo{
+            height: auto;
+        }
+        &__logo-img{
+            width: 90%;
+            height: auto;
+        }
+        &__lang-change_sm{
+            display: block;
+        }
+        &__socials-block{
+            margin-bottom: 20px;
+        }
+    }
     
 }
  
@@ -174,6 +198,27 @@
             line-height: 27px;
         }
     }
+
+    .footer-main{
+        &__uppart-items{
+            justify-content: space-evenly;
+        }
+        &__uppart-item{
+            padding-top: 19px;
+            width: 39%;
+        }
+        &__form-item{
+            display: none;
+        }
+        &__request-question_sm{
+            display: block;
+        }
+        &__socials-block{
+            margin-bottom: 0px;
+        }
+    }
+
+    
 
 }
 
@@ -253,6 +298,49 @@
     .content {
         padding-top: 0px;
     }
+    .footer-main{
+        height: 100%;
+        &__uppart::before{
+            content: none;
+        }
+        &__uppart-items{
+            // flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+        &__uppart-item{
+            padding-top: 19px;
+            width: 360px;
+        }
+        &__uppart-item:nth-child(3){
+            margin-top: 50px;
+        }
+        &__contact-item{
+            margin-left: 60px;
+        }
+        &__logo-img{
+            width: 100%;
+        }
+        &__lang-change_sm{
+            margin-bottom: 30px;
+        }
+        &__copyright_idv {
+            margin-bottom: 20px;
+        }
+        &__socials-block{
+            margin-bottom: 15px;
+        }
+    }
+    .wrap{
+        // padding: 0;
+    }
+    .btn-footer {
+        width: 100%;
+    }
+    .btn{
+        padding: 0.6rem .75rem;
+    }
     
 }
 
@@ -326,6 +414,15 @@
     .subheader-btn__text{
         font-size: 19px;
         line-height: 21px;
+    }
+    .footer-main{
+
+        &__uppart-item{
+            width: 100%;
+        }
+        &__contact-item{
+            margin-left: 0px;
+        }
     }
 
     

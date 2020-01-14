@@ -122,6 +122,9 @@
   display: block;
   transition: 0.1s;
 }
+.nav-wrap>ul>li>a{
+  height: 59px;
+}
 
 .nav-wrap>ul>li.menu-item-has-children>a::after {
   content: "\f107";
@@ -135,6 +138,7 @@
 .nav-wrap ul li a:hover, .nav-wrap ul li a:active {
   text-decoration: none;
   font-weight: 700;
+  
 }
 
 .nav-wrap>ul>li a:hover, .nav-wrap>ul>li a:active, .nav-wrap>ul>li.current-menu-item>a {
@@ -187,7 +191,7 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
 }
 
 .nav-wrap ul.sub-menu a {
-  padding-left: 10px;
+  padding-left: 20px;
   font-size: 15px;
   line-height: 41px;
   font-weight: 300;
@@ -215,13 +219,32 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
   border-bottom: none;
 }
 
+/* ==================================== */
+/*		  	  Navigaton Footer Menu		
+/* ==================================== */
+.footer-nav{
+  list-style: none;
+  
+  li a{
+    color: $color-white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 200;
+    letter-spacing: 0.03em;
+    &:hover{
+      color: $color-yellow;
+    }
+  }
+}
+
 #back-top {
   background: url(../img/pointup.png);
-  position: fixed;
+  position: absolute;
   text-align: center;
   font-size: 25px;
   line-height: 50px;
-  bottom: 45px;
+  bottom: 25px;
   right: 25px;
   width: 44px;
   height: 44px;
@@ -238,7 +261,7 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
     padding-bottom: 5px;
   }
   .nav-wrap ul.sub-menu li{
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
   }
 
   .nav-wrap ul.sub-menu a {
@@ -261,8 +284,12 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
   .nav-wrap ul li a{
     font-size: 15px;
   }
+  .nav-wrap>ul>li>a{
+    height: 49px;
+  }
   .nav-wrap ul.sub-menu a{
     font-size: 14px;
+    padding: 10px;
   }
   
 }
@@ -276,11 +303,15 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
     line-height: 44px;
   }
   .nav-wrap ul.sub-menu li {
-    margin-bottom: 12px;
+    // margin-bottom: 12px;
   }
   .nav-wrap ul li a{
     font-size: 14px;
   }
+  .nav-wrap>ul>li>a{
+    height: 44px;
+  }
+  .n
   .nav-wrap ul.sub-menu a{
     font-size: 13px;
   }
