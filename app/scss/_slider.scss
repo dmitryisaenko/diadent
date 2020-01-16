@@ -1,0 +1,35 @@
+.slider-wrap{
+    width: 100%;
+    height: auto;
+    background-color: $color-white;
+}
+
+.slider{
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider-block-blur{
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    text-outline: 0;
+    z-index: 2;
+}
+
+.slider-block-blur_left{
+    left: 0;
+    background-image: url('/img/opacity_block_left_250.png');
+}
+
+.slider-block-blur_right{
+    right: 0;
+    background-image: url('/img/opacity_block_right_250.png');
+}
+
+.carousel-control-prev, .carousel-control-next{
+    z-index: 10;
+}
