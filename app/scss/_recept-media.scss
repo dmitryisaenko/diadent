@@ -1,0 +1,115 @@
+/* ----------------- ЗНАЧЕНИЕ И МЕНЬШЕ -----------------*/
+/*1200 и меньше */
+@media only screen and (max-width : 1200px) {
+    .recept-item{
+        flex-direction: column;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+    }
+    .recept-item_ordered{
+        flex-direction: column-reverse;
+    }
+    .recept-item__content-wrap_left{
+        order: -1;
+    }
+    .recept-item__img-wrap, .recept-item__content-wrap{
+        margin: 0 auto;
+    }
+
+    .recept-item__content-wrap{
+        padding: 0;
+        padding-bottom: 30px;
+        width: 80%;
+        margin-top: -5px;
+    }
+    .recept-item__img{
+        border-radius: 4px 4px 0px 0px;
+    }
+    .recept-item__content{
+        padding: 30px 60px 30px 60px;
+    }
+    
+}
+
+/*991 и меньше */
+@media only screen and (max-width : 991px) {
+    
+    
+}
+ 
+/*880 и меньше */
+@media only screen and (max-width : 880px) {
+    .recept-item__img-wrap {
+        width: 60%;
+    }
+    
+}
+
+
+/*768 и меньше */
+@media only screen and (max-width : 768px) {
+    .recept-item__img-wrap {
+        width: 80%;
+    }
+    .recept-item__content-wrap{
+        padding: 0;
+        padding-bottom: 30px;
+        width: 90%;
+    }
+    .recept-item__content{
+        padding: 30px;
+    }
+
+}
+
+/*660 и меньше */
+@media only screen and (max-width : 660px) {
+    .recept-item__img-wrap {
+        width: 90%;
+    }
+    .recept-item__content-wrap{
+        padding: 0;
+        padding-bottom: 30px;
+        width: 95%;
+    }
+    .recept-item__content_right{
+        margin-left: 0px;
+    }
+    .recept-item__content_left{
+        margin-right: 0px;
+    }
+    
+}
+
+/*576 и меньше */
+@media only screen and (max-width: 576px) {
+    .recept-item__title {
+        font-size: 21px;
+    }
+    .recept-item__text{
+        line-height: 27px;
+    }
+    
+}
+
+/*420 и меньше */
+@media only screen and (max-width : 420px) {
+    .recept-item__title {
+        font-size: 19px;
+        margin-bottom: 13px;
+    }
+    .recept-item__text {
+        line-height: 21px;
+        font-size: 15px;
+    }
+    
+}
+
+/*320 и меньше */
+@media only screen and (max-width : 320px) {
+    
+    
+}

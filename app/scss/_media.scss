@@ -277,6 +277,9 @@
         position: initial;
         margin-top: 45px;
     }
+    .header-substrate {
+        height: 0px;
+    }
     .subheader{
         height: auto;
         flex-direction: column;
@@ -403,6 +406,7 @@
     .hide-sm{
         display: none;
     }
+    
 
     .our-benefits-item{
         width: 91%;
@@ -542,7 +546,9 @@
             font-size: 70px;
         }
     }
-
+    .btn-content {
+        width: 80%;
+    }
     
 }
 

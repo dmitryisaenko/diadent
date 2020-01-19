@@ -265,8 +265,9 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
   }
 
   .nav-wrap ul.sub-menu a {
+    // padding-right: 10px;
     line-height: 21px;
-    padding-right: 10px;
+    padding: 10px;
   }
 }
 
@@ -290,6 +291,7 @@ ul.sub-menu:hover > .nav-wrap ul li.menu-item {
   .nav-wrap ul.sub-menu a{
     font-size: 14px;
     padding: 10px;
+    line-height: 13px;
   }
   
 }

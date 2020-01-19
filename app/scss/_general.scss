@@ -102,9 +102,13 @@ ul{
 	width: 100%;
 }
 
-.section-wrap_color{
+.section-wrap{
 	padding: 60px 15px;
 	width: 100%;
+	background-color: $color-white;
+}
+
+.section-wrap_color{
 	background-color: $color-pink;
 }
 
@@ -217,17 +221,39 @@ ul{
 	letter-spacing: 0.03em;
 	color: $color-red;
 	text-align: center;
-	margin-bottom: 10px;
+	margin: 10px 0px;
+	line-height: 1;
+}
+
+.section-subtitle{
+	opacity: 0.8;
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 300;
+	letter-spacing: 0.03em;
+	color: $color-gray1;
+	text-align: center;
+}
+
+.show-sm{
+	display: none;
 }
 
 /*880 и меньше */
 @media only screen and (max-width : 880px) {
-	.section-wrap_color{
+	.section-wrap{
 		padding: 40px 15px;
 	}
 	
 	.section-title{
 		font-size: 35px;
+	}
+}
+
+/*660 и меньше */
+@media only screen and (max-width :660px) {
+	.show-sm{
+		display: block;
 	}
 }
 
@@ -237,6 +263,12 @@ ul{
 		margin-top: 10px;
 		font-size: 33px;
 		line-height: 1;
+	}
+	.btn-content {
+		width: 80%;
+	}
+	.btn-content__text:before{
+		content: none;
 	}
 }
 

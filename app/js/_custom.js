@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		$('body,html').animate({scrollTop: top}, 1000);
 	});
 
-	
 
 	
 	// Кнопка "Наверх" с появлением
