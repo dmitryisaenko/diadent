@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     background-color: $color-white;
+    position: relative;
 }
 
 .slider{
@@ -32,4 +33,88 @@
 
 .carousel-control-prev, .carousel-control-next{
     z-index: 10;
+}
+
+.slider-controls-wrap{
+    position: absolute;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+    height: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    z-index: 13;
+}
+.slider-controls{
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    opacity: 0.5;
+    background-color: $color-red;;
+    border-radius: 10px;
+    z-index: 13;
+    transition: 0.2s;
+    &:after{
+        position: absolute;
+        font-family: FontAwesome;
+        font-size: 30px;
+        top: 7px;
+        
+        color: $color-white;
+    }
+    &:hover{
+        background-color: $color-yellow;
+        opacity: 1;
+    }
+}
+
+.slider-controls-left{
+    // left: 20px;
+    &:after{
+        content: '\f053';
+        left: 17px;
+    }
+}
+
+.slider-controls-right{
+    // right: 20px;
+    &:after{
+        content: '\f054';
+        right: 16px;
+    }
+}
+
+.slider-dots{
+    position: absolute;
+    z-index: 13;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item__title{
+    position: absolute;
+    width: 100%;
+    // height: 100%;
+    z-index: 11;
+    top: calc(50% - 83px);
+    display: flex;
+    justify-content: center;
+    p{
+        text-shadow: 0px 0px 7px $color-red;
+        font-size: 75px;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        color: $color-white;
+        padding: 25px;
+        
+        &:before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: $color-orange;
+        opacity: .5;
+        }
+    }
 }

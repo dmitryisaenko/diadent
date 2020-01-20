@@ -177,6 +177,22 @@ ul{
 	}
 }
 
+.btn-reviews{
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 33px;
+	letter-spacing: 0.03em;
+	color: $color-red;
+	text-decoration: none;
+	width: 230px;
+	height: 45px;
+	display: block;
+	margin: 30px auto 0;
+	&:hover{
+		color: $color-white;
+	}
+}
+
 .btn-footer{
 	width: 90%;
 	border: 1px solid $color-yellow;

@@ -1,0 +1,129 @@
+.breadcrumbs{
+    
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    padding-top: 25px;
+
+    &-link{
+        opacity: 0.5;
+        text-decoration: none;
+        color: $color-gray1;
+        &:hover{
+            text-decoration: underline;
+            color: $color-red;
+        }
+    }
+
+    &-text{
+        opacity: 0.5;
+        color: $color-gray1;
+    }
+}
+
+.about-content{
+    padding: 35px 0px 60px;
+
+    &__logo-wrap{
+        width: 100%;
+        height: 550px;
+        box-shadow: 3px 3px 3px $color-gray4;
+        z-index: 1;
+    }
+
+    &__logo-img{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    &__main{
+        position: relative;
+        margin: -180px 35px 0px;
+        padding: 40px 45px 10px;
+        background-color: $color-white;
+        z-index: 10;
+        display: block;
+        border-radius: 10px;
+    }
+
+    &__title{
+        font-size: 25px;
+        line-height: 45px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        color: $color-red;
+        margin-bottom: 10px;
+    }
+
+    &__text{
+        opacity: 0.8;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+        letter-spacing: 0.03em;
+        color: $color-gray1;
+        p{
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.services-wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    // margin-top: 20px;
+}
+
+.services__item{
+    width: 100%;
+    height: 140px;
+    margin-top: 20px;
+}
+
+.services__link{
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    
+    &:hover{
+        color: $color-red;
+        text-decoration: none;
+    }
+    &:hover .services-title{
+        color: $color-red;
+        text-decoration: none;
+    }
+    &:hover .services__img-wrap{
+        background-color: $color-yellow;
+    }
+}
+.services__img-wrap{
+    margin: 0 auto;
+    width: 87px;
+    height: 87px;
+    background-color: $color-white;
+    border: 5.0px solid $color-braun;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.services__img{
+    
+}
+
+.services-title{
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 19px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: $color-gray1;
+    text-align: center;
+    transition: 0.2s;
+}
