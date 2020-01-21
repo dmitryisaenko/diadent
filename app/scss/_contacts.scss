@@ -1,0 +1,22 @@
+
+
+
+.contact-information{
+    padding-top: 53px;
+    width: 24%;
+    height: 430px;
+    color: black;
+    .footer-main__contact-title{
+        color: $color-gray1;
+    }
+    .footer-main__contact-text{
+        color: $color-gray1;
+        font-weight: 700;
+    }
+    .footer-main__contact-link{
+        font-weight: 700;
+        text-decoration: underline;
+        letter-spacing: 0.03em;
+        color: $color-gray1;
+    }
+}

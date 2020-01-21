@@ -1,0 +1,140 @@
+/*1200 и меньше */
+@media only screen and (max-width : 1200px) {
+    
+    
+}
+
+/*991 и меньше */
+@media only screen and (max-width : 991px) {
+    .two-col{
+        display: block;
+    }
+    .main-part{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sidebar{
+        display: none;
+    }
+    .lastnews-item{
+        width: 48%;
+    }
+    
+}
+ 
+/*880 и меньше */
+@media only screen and (max-width : 880px) {
+    
+    
+}
+
+
+/*768 и меньше */
+@media only screen and (max-width : 768px) {
+    .wrap-content{
+        padding: 0px;
+    }
+    .main-article{
+        padding: 20px 30px 10px;
+        &__title{
+            font-size: 23px;
+            line-height: 35px;
+        }
+        &__text{
+            p{
+                margin-bottom: 20px;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            img{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .lastnews-item__title{
+        font-size: 20px;
+    }
+    .lastnews-item__text{
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+
+    
+
+}
+
+/*660 и меньше */
+@media only screen and (max-width : 660px) {
+    .lastnews{
+        padding: 20px 20px 0px;
+    }
+    .lastnews__title{
+        margin-bottom: 20px;
+    }
+    .lastnews-items{
+        flex-wrap: wrap;
+    }
+    .lastnews-item{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+}
+
+/*576 и меньше */
+@media only screen and (max-width: 576px) {
+    .main-article{
+        padding: 20px 20px 10px;
+        &__title{
+            font-size: 21px;
+            line-height: 30px;
+        }
+        &__text{
+            p{
+                margin-bottom: 20px;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            img{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .lastnews-item{
+        margin-bottom: 30px;
+    }
+    
+}
+
+/*420 и меньше */
+@media only screen and (max-width : 420px) {
+    .main-article{
+        padding: 10px;
+        &__title{
+            font-size: 19px;
+            line-height: 25px;
+        }
+        &__text{
+            p{
+                margin-bottom: 20px;
+                font-size: 13px;
+                line-height: 20px;
+            }
+            img{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .lastnews__title{
+        font-size: 19px;
+        line-height: 1;
+    }
+    
+}
+
+/*320 и меньше */
+@media only screen and (max-width : 320px) {
+    
+    
+}

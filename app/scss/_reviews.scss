@@ -11,11 +11,13 @@
     .carousel-control-prev{
         justify-content: flex-start;
         margin-left: 10px;
+        z-index: 1;
     }
 
     .carousel-control-next{
         justify-content: flex-end;
         margin-right: 10px;
+        z-index: 1;
     }
 
     &__items{
@@ -83,12 +85,17 @@
     &__img-wrap{
         padding: 0 25px;
         width: 140px;
+        z-index: 2;
     }
 
     &__img{
         border-radius: 15px;
         width: 88px;
         height: 88px;
+        z-index: 2;
+        &:hover{
+            box-shadow: 0px 0px 3px 3px rgba(247,147,29,0.4);
+        }
     }
 
 
@@ -102,6 +109,9 @@
         font-weight: 700;
         letter-spacing: 0.03em;
         color: $color-gray1;
+        &:hover{
+            color: $color-red;
+        }
     }
     &__date{
         opacity: 0.8;
