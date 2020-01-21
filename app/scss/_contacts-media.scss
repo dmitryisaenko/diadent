@@ -8,18 +8,46 @@
 @media only screen and (max-width : 991px) {
     
     
+    .contact-logo__img{
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    
 }
  
 /*880 и меньше */
 @media only screen and (max-width : 880px) {
-    
+    .contact-wrap{
+        display: block;
+    }
+    .contact-logo{
+        width: 100%;
+    }
+    .contact-information{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+        .footer-main__contact-item{
+            margin-left: 0px;
+        }
+    }
+    .contact_items{
+        width: 40%;
+
+    }
     
 }
 
 
 /*768 и меньше */
 @media only screen and (max-width : 768px) {
+    .contact_items{
+        width: 49%;
 
+    }
 
 }
 
@@ -31,7 +59,15 @@
 
 /*576 и меньше */
 @media only screen and (max-width: 576px) {
-    
+    .contact-information{
+        display: block;
+        .footer-main__contact-item{
+            margin-left: 30px;
+        }
+    }
+    .contact_items{
+        width: 100%;
+    }
     
 }
 
