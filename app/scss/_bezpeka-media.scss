@@ -19,6 +19,9 @@
     .lastnews-item{
         width: 48%;
     }
+    .reviews-slider__bezpeka-page{
+        display: block;
+    }
     
 }
  
@@ -58,6 +61,10 @@
         font-size: 14px;
         line-height: 22px;
         margin-bottom: 10px;
+    }
+
+    .reviews-slider__bezpeka-page{
+        display: none;
     }
 
     

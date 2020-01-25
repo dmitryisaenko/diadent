@@ -1,0 +1,23 @@
+.main-article__gallery{
+    height: 600px;
+}
+
+.gallery-wrap{
+    height: 400px;
+    width: auto;
+    
+    .fotorama__stage{
+        border-radius: 10px;
+        
+    }
+    .fotorama__nav-wrap{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .fotorama__thumb-border {
+        border-radius: 10px;
+    }
+    .fotorama__thumb{
+        border-radius: 10px;
+    }
+}

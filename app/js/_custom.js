@@ -90,4 +90,23 @@ document.addEventListener("DOMContentLoaded", function() {
 		});
 	});
 
+
+	//Изменение размеров превьюшки для слайдера при маленьких разрешениях:
+	var width = $(window).width();
+	console.log(width);
+	if (width < 660) {
+		$( "#fotorama-css" ).attr({
+			"data-thumb-height": "32",
+			"data-thumb-width": "32",
+		});
+	}
+	if (width < 320) {
+		$( "#fotorama-css" ).attr({
+			"data-thumb-height": "24",
+			"data-thumb-width": "24",
+		});
+	}
+	
+
 });
+
