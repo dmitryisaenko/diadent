@@ -107,6 +107,18 @@ document.addEventListener("DOMContentLoaded", function() {
 		});
 	}
 	
+	//Slider 1:1
+	$(function(){
+		$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+		$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+	  });
+
+	// $('.worksCarousel').carousel({
+	// 	interval: 2000
+	// })
+
+	//   $('.cocoen').cocoen();
+	
 
 });
 

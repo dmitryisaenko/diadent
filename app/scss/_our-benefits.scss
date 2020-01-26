@@ -41,7 +41,31 @@
         background-color: $color-yellow;
     }
 
-    &:hover &__content{
+    &:hover &__content,
+    &:hover &__title{
         color: $color-white;
+    }
+}
+
+.our-benefits__single{
+    .our-benefits-items{
+        justify-content: center;
+    }
+    .our-benefits-item{
+        width: 70%;
+        min-height: 200px;
+        height: auto;
+    }
+    .our-benefits-item__content{
+        padding: 15px 40px;
+    }
+    .our-benefits-item__title{
+        font-size: 22px;
+        line-height: 25px;
+        // width: 90%;
+        font-weight: 800;
+        letter-spacing: 0.03em;
+        color: $color-gray1;
+        margin-bottom: 15px;
     }
 }

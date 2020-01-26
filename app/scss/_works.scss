@@ -1,0 +1,21 @@
+.galleryWorks-wrap{
+    height: auto;
+    width: 100%;
+
+    .carousel-indicators{
+        position: relative;
+    }
+
+    .carousel-indicators li {
+        width: 10px;
+        display: block;
+        height: 10px;
+        border-radius: 100%;
+        background-color: $color-white;
+        border: 1px solid $color-orange;
+        margin-top: 15px;
+        &.active{
+            background-color: $color-orange;
+        }
+      }
+}
